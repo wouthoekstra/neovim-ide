@@ -10,7 +10,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
 Plug 'ludovicchabant/vim-gutentags'
 Plug 'kaicataldo/material.vim'
-" Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 Plug 'enricobacis/vim-airline-clock'
 Plug 'tpope/vim-surround'
 Plug 'adoy/vim-php-refactoring-toolbox'
@@ -18,8 +18,6 @@ Plug 'rakr/vim-one'
 Plug 'ncm2/ncm2'
 Plug 'phpactor/phpactor'
 Plug 'phpactor/ncm2-phpactor'
-Plug 'junegunn/fzf.vim'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
