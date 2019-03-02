@@ -9,7 +9,6 @@ Plug 'crusoexia/vim-javascript-lib'
 Plug 'vim-airline/vim-airline'
 Plug 'w0rp/ale'
 Plug 'kaicataldo/material.vim'
-Plug 'enricobacis/vim-airline-clock'
 Plug 'tpope/vim-surround'
 Plug 'ncm2/ncm2'
 Plug 'phpactor/phpactor'
@@ -49,30 +48,16 @@ set ttyfast
 
 " ale configuration
 let g:airline#extensions#ale#enabled = 1
+let g:ale_lint_delay
 " Use a slightly slimmer error pointer
 hi ALEErrorSign guifg=#DF8C8C
 hi ALEWarningSign guifg=#F2C38F
-" global language specifics
+
+" language specifics
 let g:ale_php_phpcs_standard='PSR2'
 let g:ale_php_phpcbf_standard='PSR2'
 " let g:ale_php_phpcs_standard='phpcs.xml.dist'
 let g:ale_php_phpmd_ruleset='phpmd.xml'
-" let g:ale_linters = {
-"   \ 'php': ['phpcs', 'php']
-"   \}
-" let g:ale_fixers = {
-"   \ '*': ['remove_trailing_lines', 'trim_whitespace'],
-"   \ 'php': ['phpcbf', 'php_cs_fixer', 'remove_trailing_lines', 'trim_whitespace'],
-"   \}
-
-" ctrlp configuration
-let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files -co --exclude-standard']
-
-" clock configuration
-let g:airline#extensions#clock#format = '%H:%M:%S'
-let g:airline#extensions#clock#updatetime = 1000
-
-" PHP workflow
 
 if has('nvim')
   tnoremap <Esc> <C-\><C-n>
