@@ -21,7 +21,7 @@ USER me
 # Install Neovim plugin manager and install plugins
 RUN curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-COPY init.vim /home/me/.config/nvim/init.vim
+COPY --chown=me:me init.vim /home/me/.config/nvim/init.vim
 RUN nvim +PlugInstall +qall >> /dev/null
 
 # Configure zsh and oh-my-zsh
