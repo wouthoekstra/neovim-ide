@@ -17,7 +17,7 @@ RUN set -x \
 # Install docker compose
 RUN curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
-RUN addgroup -S me && adduser -S -G me me 
+RUN addgroup -S me && adduser -S -G me me --uid=1000
 USER me
 
 # Configure zsh and oh-my-zsh
