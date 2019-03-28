@@ -11,6 +11,7 @@ RUN set -x \
         php7-simplexml \
         php7-tokenizer \
         php7-xmlwriter \
+	php7-mbstring \
  && apk add --no-cache -t .build-deps \
         php7-json \
         php7-openssl \
