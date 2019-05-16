@@ -11,6 +11,7 @@ RUN set -x \
         zsh \
         docker \
         the_silver_searcher \
+        xclip \
     # Default directory
  && mkdir -p /workspace 
 
@@ -18,6 +19,7 @@ RUN set -x \
 RUN curl -L "https://github.com/docker/compose/releases/download/1.23.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 
 RUN addgroup -S me && adduser -S -G me me --uid=1000
+RUN addgroup me xfs
 USER me
 
 # Configure zsh and oh-my-zsh
