@@ -6,7 +6,7 @@ call plug#begin('~/.vim/plugged')
 " Declare the list of plugins.
 Plug 'pangloss/vim-javascript'
 Plug 'crusoexia/vim-javascript-lib'
-Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'
 Plug 'kaicataldo/material.vim'
 Plug 'tpope/vim-surround'
@@ -45,6 +45,7 @@ set tabstop=8 softtabstop=0 expandtab shiftwidth=2 smarttab
 set relativenumber
 set nowrap
 set ttyfast
+set lazyredraw
 
 " ale configuration
 let g:airline#extensions#ale#enabled = 1

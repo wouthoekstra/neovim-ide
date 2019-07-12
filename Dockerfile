@@ -4,6 +4,7 @@ RUN set -x \
  && apk add --no-cache \
         # General IDE requirements
         neovim \
+        neovim-doc \
         openssh \
         git \
         curl \
